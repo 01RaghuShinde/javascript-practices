@@ -9,21 +9,27 @@
 <body>
     <div class="container">
         <div class="apiBody">
+            <h2 id="apilink">g</h2>
 
         </div>
         <button id ="fetchJoke">GEt joke</button>
     </div>
 </body>
 <script>
-   const apiBody= document.querySelector(".apiBody")
+   const apiBody= document.querySelector(".apilink")
    const apiurl = "https://icanhazdadjoke.com/";
 
    const fetchdata =()=>{
     const response = fetch(apiurl)
     .then((res)=>{
-        console.log(res)
-    }).catch((error)=>{
+        // console.log(res)
+        return res.json();
+    }).then((data)=>{
+        console.log(data);
+    })
+    .catch((error)=>{
         console.log("Error Occured",error);
+        apiBody.innerHTML = "Error occured";
     })
    }
    fetchdata();
