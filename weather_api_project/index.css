@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    background-color: black;
+           /* Enable Flexbox */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Full viewport height for demonstration */
+    border: 1px solid #ccc;
+}
+.container{
+
+    background-color:white ;
+    border-radius: 10px;
+    width:45%;
+    height: 60%;
+}
