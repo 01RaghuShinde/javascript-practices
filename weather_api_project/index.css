@@ -8,9 +8,38 @@ body{
     border: 1px solid #ccc;
 }
 .container{
+    border: 3px solid green;
 
     background-color:white ;
     border-radius: 10px;
     width:45%;
     height: 60%;
+}
+/* form{
+    background-color: black;
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 20px; */
+.weather_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+i{
+    position:relative;
+    /* left: 432px; */
+    /* top: 164px; */
+    font-size: 20px;
+    color: white;
+}
+input{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 20px;
+    top:-10px;
+
 }
